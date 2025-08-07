@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Palette</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mood Palette 🎨</h1>
+    <p>Select your mood and see a color palette that matches it.</p>
+
+    <div class="mood-selector">
+      <button data-mood="happy">😊 Happy</button>
+      <button data-mood="sad">😢 Sad</button>
+      <button data-mood="angry">😠 Angry</button>
+      <button data-mood="calm">😌 Calm</button>
+    </div>
+
+    <div class="palette" id="palette"></div>
+    <div class="quote" id="quote"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
