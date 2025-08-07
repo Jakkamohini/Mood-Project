@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Lifecycle</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .circle-container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+    }
+
+    .stage {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .stage:nth-child(1)  { top: 0%; left: 50%; transform: translate(-50%, -50%); background: #1abc9c; }   /* Plan */
+    .stage:nth-child(2)  { top: 18%; left: 85%; transform: translate(-50%, -50%); background: #3498db; } /* Develop */
+    .stage:nth-child(3)  { top: 50%; left: 100%; transform: translate(-50%, -50%); background: #9b59b6; } /* Build */
+    .stage:nth-child(4)  { top: 82%; left: 85%; transform: translate(-50%, -50%); background: #f39c12; } /* Test */
+    .stage:nth-child(5)  { top: 100%; left: 50%; transform: translate(-50%, -50%); background: #e67e22; } /* Release */
+    .stage:nth-child(6)  { top: 82%; left: 15%; transform: translate(-50%, -50%); background: #e74c3c; } /* Deploy */
+    .stage:nth-child(7)  { top: 50%; left: 0%; transform: translate(-50%, -50%); background: #2ecc71; }  /* Operate */
+    .stage:nth-child(8)  { top: 18%; left: 15%; transform: translate(-50%, -50%); background: #34495e; } /* Monitor */
+
+    .footer {
+      margin-top: 60px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .circle-container {
+        width: 300px;
+        height: 300px;
+      }
+      .stage {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle</h1>
+  <div class="circle-container">
+    <div class="stage">Plan</div>
+    <div class="stage">Develop</div>
+    <div class="stage">Build</div>
+    <div class="stage">Test</div>
+    <div class="stage">Release</div>
+    <div class="stage">Deploy</div>
+    <div class="stage">Operate</div>
+    <div class="stage">Monitor</div>
+  </div>
+  <div class="footer">
+    <p>This diagram shows the cyclic DevOps lifecycle. After Monitor, the process loops back to Plan.</p>
+  </div>
+</body>
+</html>
